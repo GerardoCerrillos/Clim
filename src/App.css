@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(#f0eeec, #12bfdd);
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.darkmode {
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(#eceff0, #8d03a8);
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.h1 {
+  font-size: large;
+}
+
+
+/* clase de mi boton ajustes */
+.button-dm {               
+  padding: 10px 25px;
+  border-radius: 50%;
+  top: s;
+  left: 50%;
+}
