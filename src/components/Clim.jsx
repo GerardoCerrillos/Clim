@@ -1,21 +1,32 @@
+import "./clim.css";
 
-const Clim = ({}) => {
+const Clim = ({ lon, lat, temp, weather, description }) => {
+  console.log(weather)
   return (
-    <div className="container">
-      <div className="clima1">
-        <h1>19</h1>
-        <ul>
-          <li>nublado</li>
-          <li>despegajo</li>
-          <li>presion</li>
-        </ul>
+    <>
+      <div className="container">
+        <div className="weather-data">
+          <h1>{temp?.celsius}</h1>
+          <ul className="weather-list">
+            <li>Wind {weather?.wind.speed} km/s</li>
+            <li>Humidity {weather?.main.humidity}</li>
+            <li>Pressure {weather?.main.pressure}</li>
+          </ul>
+        </div>
+        <div className="weather-img-container">
+          <img className="weather-img" src="/cloudy-day.png" alt="" />
+        </div>
+        <div className="weather-info">
+          <div className="weather-city">
+            <h2>{weather?.name}</h2>
+          </div>
+          <div className="weather-description">
+            <p>{weather?.weather[0].description}</p>
+          </div>
+        </div>
       </div>
-        <img className="imgclim" src="/cloudy-day.png" alt="" />
-      <div className="ciudadConClima">
-        <h2>mexcio</h2>
-        <p>clima</p>
-      </div>
-    </div>
+      <div className="container-bg"></div>
+    </>
   );
 };
 export default Clim;

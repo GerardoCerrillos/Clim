@@ -45,7 +45,6 @@ function App() {
           setTemp({ celsius, farenheit });
           setWeather(res.data);
           setDescription(res.data.weather[0].description);
-          console.log(res.data);
         })
         .catch((err) => console.log(err));
     }
@@ -79,10 +78,7 @@ function App() {
           checkedIcon={false}
         />
       </header>
-      <article className="forma1">
-        <Clim longitude={coords?.lon} latitude={coords?.lat} />
-      </article>
-      <button className="cambio"></button>
+        <Clim lon={coords?.lon} lat={coords?.lat} temp={temp} weather={weather} description={description} />
     </div>
   );
 }
