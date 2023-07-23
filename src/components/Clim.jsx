@@ -1,7 +1,7 @@
 import "./clim.css";
 
-const Clim = ({ lon, lat, temp, weather, description }) => {
-  console.log(weather)
+const Clim = ({ lon, lat, temp, weather, checked ,description }) => {
+
   return (
     <>
       <div className="container">
@@ -25,7 +25,7 @@ const Clim = ({ lon, lat, temp, weather, description }) => {
           </div>
         </div>
       </div>
-      <div className="container-bg"></div>
+      <div className={checked ? 'container-bg-white' : 'container-bg-dark'}></div>
     </>
   );
 };

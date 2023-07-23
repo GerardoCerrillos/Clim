@@ -3,6 +3,7 @@ import Switch from "react-switch";
 import { useState, useEffect } from "react";
 import Clim from "./components/Clim";
 import axios from "axios";
+import Button from "./components/Button";
 
 function App() {
   // switch
@@ -78,7 +79,8 @@ function App() {
           checkedIcon={false}
         />
       </header>
-        <Clim lon={coords?.lon} lat={coords?.lat} temp={temp} weather={weather} description={description} />
+        <Clim lon={coords?.lon} lat={coords?.lat} temp={temp} weather={weather} description={description} checked={checked} />
+        <Button temp={temp} checked={checked}/>
     </div>
   );
 }

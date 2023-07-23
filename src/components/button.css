@@ -1,0 +1,27 @@
+.buttom_dark
+{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: #9148f096;
+  color: black;
+  font-size: 25px;
+} 
+
+.buttom_white
+{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
