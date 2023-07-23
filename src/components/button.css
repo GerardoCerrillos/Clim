@@ -1,7 +1,7 @@
 .buttom_dark
 {
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 70px;
@@ -15,7 +15,7 @@
 .buttom_white
 {
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 70px;
