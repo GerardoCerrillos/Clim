@@ -13,6 +13,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  max-width: 450px;
 }
 
 .container-bg-white
@@ -72,6 +73,7 @@
 /*  */
 .weather-img-container
 {
+  max-width: 450px;
   width: 200px;
   height: 180px;
 }
@@ -109,5 +111,157 @@
   text-align: center;
   font-size: 20px;
   margin-top: 50px;
+}
+
+@media (max-width: 360px)
+{
+  .container-bg-dark
+  {
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+  }
+  .container
+  {
+    width: 300px;
+    height: 200px;
+    font-size: 10px;
+    border: 1px solid red;
+  }
+
+  .weather-data>h1
+  {
+    font-size: 3rem;
+  }
+  .weather-list{
+    font-size: .8rem;
+    border: 1px solid red;
+    width: 100px;
+  }
+
+  .weather-data{
+    border: solid red 1px;
+    width: 40%;
+    height: 130px;
+  }
+
+  .weather-img-container{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin: 20px;
+  }
+
+  .weather-info{
+    border: 1px solid red;
+    height: 30px;
+    
+  }
+  .weather-city{
+    border: 1px blue  solid;
+    font-size: 1rem;
+    margin: none;
+    height: 28px;
+    width: 70%;
+  }
+
+  .weather-city>h2{
+    height: 28px;
+    border: 1px black solid;
+    margin: 0;
+    font-size: 1.3rem;
+    
+  }
+
+  .weather-description{
+    margin: 0;
+    font-size: .8rem;
+    text-align: justify;
+    margin-top: 6px;
+  }
+
+  .container-bg-white
+  {
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+  }
+
+}
+
+@media (max-width: 561px)
+{
+  .container-bg-dark
+  {
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+  }
+  .container
+  {
+    width: 300px;
+    height: 200px;
+    font-size: 10px;
+    border: 1px solid red;
+  }
+
+  .weather-data>h1
+  {
+    font-size: 3rem;
+  }
+  .weather-list{
+    font-size: .8rem;
+    border: 1px solid red;
+    width: 100px;
+  }
+
+  .weather-data{
+    border: solid red 1px;
+    width: 40%;
+    height: 130px;
+  }
+
+  .weather-img-container{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin: 20px;
+  }
+
+  .weather-info{
+    border: 1px solid red;
+    height: 30px;
+    
+  }
+  .weather-city{
+    border: 1px blue  solid;
+    font-size: 1rem;
+    margin: none;
+    height: 28px;
+    width: 70%;
+  }
+
+  .weather-city>h2{
+    height: 28px;
+    border: 1px black solid;
+    margin: 0;
+    font-size: 1.3rem;
+    
+  }
+
+  .weather-description{
+    margin: 0;
+    font-size: .8rem;
+    text-align: justify;
+    margin-top: 6px;
+  }
+
+  .container-bg-white
+  {
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+  }
+
 }
 
